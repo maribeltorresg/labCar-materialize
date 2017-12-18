@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.btn-radius {
+    border-radius: 10px;
+}
+
 /* Modal inicia sesión */
 .user {
     border-bottom: 1px solid #fff;
@@ -192,7 +196,27 @@ color: #fff;
         padding: 2.5em;
     }
 
-     /* Sección phone */
+    .info-desktop .text:before {
+        content: " ";
+        display: inline-block;
+        width: 90px;
+        height: 1px;
+        background: white;
+        margin-top: 20px;
+        margin-right: 2rem;
+    }
+
+    .info-desktop .text:after {
+        content: " ";
+        display: inline-block;
+        width: 90px;
+        height: 1px;
+        background: white;
+        margin-top: 20px;
+        margin-left: 2rem;
+    }
+
+    /* Sección phone */
      .phone {
         padding: 2em 0;
     }

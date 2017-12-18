@@ -72,9 +72,11 @@
     <div class="info-desktop white-text bg-color hide-on-small-only">
       <h3 class="font-size">Disfruta del viaje <br>Eres dueño de tu tiempo</h3>
       <p>Viaja con <img src="assets/images/logoBlanco.png" class="img-size" alt=""></p>
-      <a href="#modalCheckIn" class="waves-effect white black-text btn modal-trigger">Regístrate</a>
-      <hr>
-      <button class="btn waves-effect white black-text" type="submit" name="action">Conviértete en un conductor</button>
+      <!-- Boton de registrate -->
+      <a href="#modalCheckIn" class="btn-radius z-depth-5 tooltipped white black-text btn modal-trigger" data-tooltip="vamos registrate">Regístrate</a>
+      <p class="text">O bien</p>
+      <!-- Boton convierte en conductor -->
+      <a href="#modalDriver" class="z-depth-5 btn-radius white tooltipped black-text btn modal-trigger" data-tooltip="vamos convierte en conductor">Conviértete en conductor</a>
     </div>
   </section>
 
@@ -151,7 +153,7 @@
     <div class="text-drive">
       <h2 class="font-size">Conduce cuando quieras</h2>
       <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-      <a href="#modalDriver" class="waves-effect bg-color btn modal-trigger">Conviértete en conductor</a>
+      <a href="#modalDriver" class="waves-effect bg-color z-depth-5 btn-radius btn modal-trigger">Conviértete en conductor</a>
     </div>
   </section>
 
@@ -208,10 +210,6 @@
     </div>
   </div>
 
-
-
-  
-
   <!-- Sección tarifa -->
   <section class="tariff bg-color white-text">
     <div class="container">
@@ -241,11 +239,11 @@
                 </div>
               </form>
             </div>
-            <button class="btn waves-effect white black-text" type="submit" name="action">¡TRAZAR RUTA!</button>
+            <button class="btn waves-effect z-depth-5 btn-radius white black-text" type="submit" name="action">¡TRAZAR RUTA!</button>
         </div>
         <div class="col s12 col m6">
           <div class="mapa">
-            jkalfkdsnfkhdslkafkld
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6869.767145359178!2d-76.99213781311869!3d-12.158232712928433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b83eb68d920d%3A0x53faa53f50bcc3f0!2sLa+Cruceta%2C+Santiago+de+Surco!5e0!3m2!1ses!2spe!4v1513609418874" width="430" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -263,7 +261,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s6 col m3">
+        <div class="col s6 push-s6 col m3">
           <ul>
             <li>
               <span class="fa fa-facebook"></span>
@@ -274,7 +272,7 @@
             </li>
           </ul>
         </div>
-        <div class="col s6 col m3">
+        <div class="col s6 pull-s6 col m3">
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Viaja</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Conduce</a></li>
@@ -286,7 +284,7 @@
             <li><a class="grey-text text-lighten-3" href="#!">Seguridad</a></li>
           </ul>
         </div>
-        <div class="col s6 col m3">
+        <div class="col s6 hide-on-small-only col m3">
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Oportunidades</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Nuestra historia</a></li>
@@ -298,7 +296,7 @@
             <li><a class="grey-text text-lighten-3" href="#!">Coders</a></li>
           </ul>
         </div>
-        <div class="col s6 col m3">
+        <div class="col s6 push-s6 col m3">
           <ul>
             <li><a href="#"><img src="assets/images/appstore.png" alt="app apple"></a></li>
             <li><a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt="app android"></a></li>
@@ -313,13 +311,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
-
-
 
     <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
