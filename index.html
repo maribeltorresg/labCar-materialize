@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="vendors/materialize/css/materialize.min.css" media="screen,projection">
     <!--Import Google Icon Font-->
@@ -22,7 +23,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="#" class="black-text">Viaja</a></li>
           <li><a href="#" class="black-text">Conduce</a></li>
-          <li><a href="#" class="black-text">Inicia sesión</a></li>
+          <li><a href="#modalSing-up" class="black-text modal-trigger">Inicia sesión</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="#" class="black-text">Viaja</a></li>
@@ -33,20 +34,102 @@
     </nav>
   </div>
 
+   <!-- Modal Structure -->
+   <div id="modalSing-up" class="modal light-blue">
+      <div class="modal-content">
+          <div class="user">
+              <i class="material-icons icon-size prefix">account_circle</i>
+            </div>
+        <div class="container-box">
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_box</i>
+                    <input id="icon_prefix black-text" type="text" class="validate">
+                    <label for="icon_prefix black-text">Username</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">lock</i>
+                    <input id="icon_password" type="password" class="validate">
+                    <label for="icon_password">Password</label>
+                  </div>
+                </div>
+              </form>
+          </div>
+          <button class="btn waves-effect orange waves-light" type="submit" name="action">LOGING</button>
+          <p>Forget password? <a href="#">Click here</a></p>
+        </div>
+      </div>
+    </div>
+
   <!-- Sección hero -->
   <section class="hero">
     <div class="info-mobile white-text bg-color hide-on-med-and-up">
       <h3>Comienza a viajar con <img src="assets/images/logoBlanco.png" class="img-size" alt="logo blanco"></h3>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Descarga el app</button>
+      <button class="btn waves-effect white black-text waves-light" type="submit" name="action">Descarga el app</button>
     </div>
     <div class="info-desktop white-text bg-color hide-on-small-only">
       <h3 class="font-size">Disfruta del viaje <br>Eres dueño de tu tiempo</h3>
       <p>Viaja con <img src="assets/images/logoBlanco.png" class="img-size" alt=""></p>
-      <button class="btn waves-effect white black-text" type="submit" name="action">Regístrate</button>
+      <!-- <button class="btn waves-effect white black-text" type="submit" name="action">Regístrate</button> -->
+      <a href="#modalCheckIn" class="waves-effect white black-text btn modal-trigger">Regístrate</a>
       <hr>
       <button class="btn waves-effect white black-text" type="submit" name="action">Conviértete en un conductor</button>
     </div>
   </section>
+
+  <!-- Modal registrarse -->
+  <div id="modalCheckIn" class="modal modal-bg">
+    <div class="modal-content container-form">
+      <div class="boton-parraf">
+        <a href="#" class="waves-effect black btn">Ya tienes una cuenta?</a>
+        <p>O crea una cuenta nueva</p>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="icon_prefix" type="text" class="validate" placeholder="Nombre">
+            </div>
+            <div class="input-field col s6">
+              <input id="icon_telephone" type="text" class="validate" placeholder="Apellido">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="icon_prefix" type="text" class="validate" placeholder="Correo Electrónico">
+            </div>
+            <div class="input-field col s12">
+              <input id="icon_prefix" type="text" class="validate" placeholder="Teléfono">
+            </div>
+            <div class="input-field col s12">
+              <input id="icon_prefix" type="text" class="validate" placeholder="Contraseña">
+            </div>
+              <div class="input-field col s12">
+                <input id="icon_prefix" type="text" class="validate" placeholder="Ciudad">
+              </div>
+              <div class="input-field col s12">
+                <input id="icon_prefix" type="text" class="validate" placeholder="(Opcional) Código de invitación">
+              </div>
+          </div>
+        </form>
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn waves-effect blue" type="submit" name="action">ENVIAR</button>
+    </div>
+  </div>
 
   <!-- sección phone -->
   <section class="phone bg-color white-text">
@@ -72,6 +155,19 @@
       <button class="btn bg-color bd-none" type="submit">Conviértete en conductor</button>
     </div>
   </section>
+
+  
+
+
+
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
 
   <!-- Sección tarifa -->
   <section class="tariff bg-color white-text">
@@ -112,6 +208,68 @@
       </div>
     </div>
   </section>
+
+  <!-- Sección footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 col m12">
+          <div class="logo-footer">
+            <img src="assets/images/logoBlanco.png" alt=" logo footer">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 col m3">
+          <ul>
+            <li>
+              <span class="fa fa-facebook"></span>
+              <span class="fa fa-twitter"></span>
+              <span class="fa fa-linkedin"></span>
+              <span class="fa fa-apple"></span>
+              <span class="fa fa-play"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="col s6 col m3">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Viaja</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Conduce</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Ciudades</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Ciudades</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Entregas</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Como funciona?</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Países</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Seguridad</a></li>
+          </ul>
+        </div>
+        <div class="col s6 col m3">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Oportunidades</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Nuestra historia</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">API de LabCar</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Eventos</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Desarrolladores</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Servicios</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Laboratoria</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Coders</a></li>
+          </ul>
+        </div>
+        <div class="col s6 col m3">
+          <ul>
+            <li><a href="#"><img src="assets/images/appstore.png" alt="app apple"></a></li>
+            <li><a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt="app android"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+      <p class="copyright">© 2014 Copyright Text</p>
+      </div>
+    </div>
+  </footer>
 
 
 
