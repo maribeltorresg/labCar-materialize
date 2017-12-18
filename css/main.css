@@ -13,6 +13,10 @@
     background-color: #f7b617;
 }
 
+.font-size {
+    font-size: 2em;
+}
+
 /* Sección phone */
 .phone {
     color: #fff; 
@@ -40,9 +44,60 @@
     margin-top: 20px;
 }
 
-@media (min-width:768px) {
+/* Sección conduce */
+.driver {
+    background-image: url('../assets/images/conduce.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.driver .text-drive {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 9rem 3rem;
+    width: 100%;
+}
+
+/* Sección tarifa */
+.tariff .mapa {
+    border: 1px solid #fff;
+    margin-top: 3em;
+    padding: 1em;
+}
+
+
+
+@media (min-width:600px) {
     .hero {
         background-position: center 91%;
         background-size: 100% auto;
+    }
+
+    .hero .info-desktop {
+        padding: 2.5em;
+    }
+
+     /* Sección phone */
+     .phone {
+        padding: 2em 0;
+    }
+
+    .phone-text {
+        padding: 3em;
+        width: 75%;
+    }
+
+    .info {
+        margin-left: 13em;
+    }
+
+    /* Seción driver */
+    .driver .text-drive {
+        padding: 7em 5em;
+        width: auto;
     }
 }
