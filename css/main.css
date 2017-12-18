@@ -1,0 +1,48 @@
+/* Seccíon hero */
+.hero {
+    align-items: center;
+    background-image: url('../assets/images/taxi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.bg-color {
+    background-color: #f7b617;
+}
+
+/* Sección phone */
+.phone {
+    color: #fff; 
+    padding: 2em 1em;
+}
+
+.phone-text {
+    border: 1px solid #fff;
+    display: flex;
+    margin-left: -1px; 
+    width: 100%;
+}
+
+.phone-title {
+    margin: auto;
+    text-align: center;
+}
+
+.info {
+    margin: 2.5em;
+}
+
+.phone .phrase {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+@media (min-width:768px) {
+    .hero {
+        background-position: center 91%;
+        background-size: 100% auto;
+    }
+}
