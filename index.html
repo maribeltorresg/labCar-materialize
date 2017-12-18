@@ -72,7 +72,6 @@
     <div class="info-desktop white-text bg-color hide-on-small-only">
       <h3 class="font-size">Disfruta del viaje <br>Eres dueño de tu tiempo</h3>
       <p>Viaja con <img src="assets/images/logoBlanco.png" class="img-size" alt=""></p>
-      <!-- <button class="btn waves-effect white black-text" type="submit" name="action">Regístrate</button> -->
       <a href="#modalCheckIn" class="waves-effect white black-text btn modal-trigger">Regístrate</a>
       <hr>
       <button class="btn waves-effect white black-text" type="submit" name="action">Conviértete en un conductor</button>
@@ -152,22 +151,66 @@
     <div class="text-drive">
       <h2 class="font-size">Conduce cuando quieras</h2>
       <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-      <button class="btn bg-color bd-none" type="submit">Conviértete en conductor</button>
+      <a href="#modalDriver" class="waves-effect bg-color btn modal-trigger">Conviértete en conductor</a>
     </div>
   </section>
 
-  
-
-
-
-  <div class="input-field col s12">
-    <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
+  <!-- Modal conduce -->
+  <div id="modalDriver" class="modal modal-driver">
+    <div class="modal-content">
+      <div class="input-field col s12 select-margin">
+        <select>
+          <option value="" disabled selected>Si</option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+        </select>
+        <label class="black-text label-size">¿Tienes vehículo de 4 puertas?</label>
+      </div>
+      <div class="input-field col s12 select-margin">
+        <select>
+          <option value="" disabled selected>Elige la marca de tu vehículo</option>
+          <option value="1">Subaru</option>
+          <option value="2">Toyota</option>
+          <option value="3">Kia</option>
+        </select>
+        <label class="black-text label-size">Marca</label>
+        <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">sociosmdv@uber.com</a></p>
+      </div>
+      <div class="input-field col s12 select-margin">
+        <select>
+          <option value="" disabled selected>Modelo1</option>
+          <option value="1">Modelo1</option>
+          <option value="2">Modelo2</option>
+          <option value="3">Modelo3</option>
+        </select>
+        <label class="black-text label-size">Modelo</label>
+      </div>
+      <div class="input-field col s12 select-margin">
+        <select>
+          <option value="" disabled selected>2017</option>
+          <option value="1">2017</option>
+          <option value="2">2016</option>
+          <option value="3">2015</option>
+        </select>
+        <label class="black-text label-size">Año</label>
+      </div>
+      <div class="input-field col s12 select-margin">
+        <select>
+          <option value="" disabled selected>Número de la matrícula</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label class="black-text label-size">Número de la matrícula</label>
+      </div>
+      <p class="info-matricula">La información de la matrícula ayuda a los clientes a identificar tu vehículo.</p>
+      <button class="btn waves-effect blue" type="submit" name="action">ENVIAR</button>
+    </div>
   </div>
+
+
+
+  
 
   <!-- Sección tarifa -->
   <section class="tariff bg-color white-text">

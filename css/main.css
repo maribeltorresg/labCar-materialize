@@ -127,6 +127,26 @@
     width: 100%;
 }
 
+/* Modal conduce */
+.modal-driver {
+    border-radius: 5px;
+}
+
+.modal-driver .select-margin {
+    margin-bottom: 4rem; 
+}
+
+.modal-driver .select-margin .label-size {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    left: 0;
+}
+
+.modal-driver .info-matricula {
+    margin-bottom: 2rem;
+}
+
 /* Sección tarifa */
 .tariff {
     padding-bottom: 2rem;
@@ -139,12 +159,12 @@
 }       
 
 /* label color */
-.input-field label {
+.tariff .input-field label {
 color: #fff;
 }
 
 /* label underline focus color */
-.input-field input[type=text] {
+.tariff .input-field input[type=text] {
     border-bottom: 1px solid #fff;
     box-shadow: 0 1px 0 0 #0000;
 }
